@@ -31,8 +31,12 @@ module.exports = {
   },
   rules: {
     semi: ["error", "always"],
-    quotes: ["error", "double"],
-    "comma-dangle": ["error", "always-multiline"],
+    quotes: [
+      "error",
+      "double",
+      { avoidEscape: true, allowTemplateLiterals: true },
+    ],
+    "comma-dangle": ["error", "only-multiline"],
     "react/no-unescaped-entities": ["error", { forbid: [">", "}"] }],
   },
 };

@@ -6,5 +6,5 @@ module.exports = {
     "/node_modules",
   ],
   preset: "ts-jest",
-  testEnvironment: "node",
+  testEnvironment: "jsdom",
 };
