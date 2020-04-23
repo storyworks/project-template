@@ -32,6 +32,7 @@ module.exports = {
   rules: {
     semi: ["error", "always"],
     quotes: ["error", "double"],
+    "comma-dangle": ["error", "always-multiline"],
     "react/no-unescaped-entities": ["error", { forbid: [">", "}"] }],
   },
 };
