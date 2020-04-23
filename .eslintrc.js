@@ -29,5 +29,9 @@ module.exports = {
   settings: {
     react: { version: "detect" },
   },
-  rules: {},
+  rules: {
+    semi: ["error", "always"],
+    quotes: ["error", "double"],
+    "react/no-unescaped-entities": ["error", { forbid: [">", "}"] }],
+  },
 };
