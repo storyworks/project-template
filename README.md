@@ -20,6 +20,12 @@ This template follows https://adrianhall.github.io/javascript/react/2020/03/29/p
 
 <br/>
 
+**Linting rules** <br/>
+This linting config has been inspired mainly by the rules used at AirNZ. Still a WIP as more complex projects are built with this template. <br/>
+Feel free to modify with your needs. Just change the "rules" in `eslintrc.js` or change the base rules it "extends" in the same file.
+
+<br/>
+
 ## Deployment
 
 This project should be generic enough to setup on any web host. So far tested with:
@@ -42,10 +48,10 @@ git worktree add dist gh-pages
 
 3. Run `yarn build` and `yarn deploy` to publish the app.
 
+<br/>
 
 
-
-### Resources / Notes
+## Resources / Notes
 
 - https://medium.com/linagora-engineering/deploying-your-js-app-to-github-pages-the-easy-way-or-not-1ef8c48424b7
 - https://stackoverflow.com/questions/39707402/why-does-git-worktree-add-create-a-branch-and-can-i-delete-it
