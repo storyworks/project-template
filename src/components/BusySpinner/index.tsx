@@ -14,7 +14,7 @@ const BusySpinner: React.SFC<Props> = ({
   if (isBusy) {
     return (
       <span data-id="spinner" onClick={onClick}>
-        I'm busy
+        {children}
       </span>
     );
   }
