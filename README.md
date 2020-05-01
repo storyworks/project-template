@@ -1,8 +1,24 @@
-# Projects template
+# Projects template 
 
-Follows https://adrianhall.github.io/javascript/react/2020/03/29/parcel-typescript-react/
-with custom storybook and jest/react-testing-libary for demos and testing.
+This template follows https://adrianhall.github.io/javascript/react/2020/03/29/parcel-typescript-react/
 
+- Added [React](https://reactjs.org/) library for building components
+- Added [Typescript](https://www.typescriptlang.org/) for type-checked scripting
+- Added [SCSS](https://sass-lang.com/) for styling
+- Added [Parcel](https://parceljs.org/) for asset bundling
+- Added [ESLint](https://eslint.org/) for linting (I have the VSCode Prettier plugin so haven't added here though I should)
+- Added [Storybook](https://storybook.js.org/) with addon (addon-actions) for demos
+- Added [jest](https://jestjs.io/) test runner+assertion library and [react-testing-library](https://testing-library.com/docs/react-testing-library/intro) rendering engine for testing
+- TODO add [bem](http://getbem.com/) for css naming
+
+<br/>
+
+**Why build template from ground up and not just use `create-react-app`?**
+- We can’t alter the tsconfig.json except in some non-important ways.
+- It uses webpack underneath, and cannot change.
+- It uses jest and testing-library. Difficult to change.
+
+<br/>
 
 ## Deployment
 
@@ -29,7 +45,11 @@ git worktree add dist gh-pages
 
 
 
+### Resources / Notes
 
-See below for more information:
-https://medium.com/linagora-engineering/deploying-your-js-app-to-github-pages-the-easy-way-or-not-1ef8c48424b7
-https://stackoverflow.com/questions/39707402/why-does-git-worktree-add-create-a-branch-and-can-i-delete-it
+- https://medium.com/linagora-engineering/deploying-your-js-app-to-github-pages-the-easy-way-or-not-1ef8c48424b7
+- https://stackoverflow.com/questions/39707402/why-does-git-worktree-add-create-a-branch-and-can-i-delete-it
+
+- A test runner allows you to run the tests and report on the results.
+- An assertion library allows you to decide if the test is successful or not.
+- A rendering engine renders your components into a DOM so you can test them.
