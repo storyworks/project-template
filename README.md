@@ -26,7 +26,7 @@ This project should be generic enough to setup on any web host. So far tested wi
 
 
 ### GitHub Pages
-To publish from dist folder on gh-pages branch:
+To build all dist assests in gh-pages branch, keeping master with source code only:
 
 1. 
 ```
