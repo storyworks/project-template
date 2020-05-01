@@ -4,7 +4,7 @@ Follows https://adrianhall.github.io/javascript/react/2020/03/29/parcel-typescri
 with custom storybook and jest/react-testing-libary for demos and testing.
 
 
-# Deployment
+## Deployment
 
 This project should be generic enough to setup on any web host. So far tested with:
 
