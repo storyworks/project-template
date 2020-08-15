@@ -5,7 +5,7 @@ This template follows https://adrianhall.github.io/javascript/react/2020/03/29/p
 - Added [React](https://reactjs.org/) library for building components
 - Added [Typescript](https://www.typescriptlang.org/) for type-checked scripting
 - Added [SCSS](https://sass-lang.com/) for styling
-- Added [Parcel](https://parceljs.org/) for asset bundling
+- Added [Parcel](https://parceljs.org/) for asset bundling, don't need to power of [webpack](https://webpack.js.org/) for simple projects
 - Added [ESLint](https://eslint.org/) for linting (I have the VSCode Prettier plugin so haven't added here though I should)
 - Added [Storybook](https://storybook.js.org/) with addon (addon-actions) for demos
 - Added [jest](https://jestjs.io/) test runner+assertion library and [react-testing-library](https://testing-library.com/docs/react-testing-library/intro) rendering engine for testing
