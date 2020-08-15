@@ -8,22 +8,23 @@ export default {
   component: BusySpinner,
 };
 
-const rootStyle: React.CSSProperties = {
+const rootStyle = {
   backgroundColor: "#F0F0F0",
   color: "#000000",
   padding: "1rem",
 };
+
 addDecorator((storyFn) => <div style={rootStyle}>{storyFn()}</div>);
 
 /* Story #1 - the component is busy */
-export const normal: React.SFC<{}> = () => (
+export const normal = () => (
   <BusySpinner isBusy onClick={action("onClick")}>
     This is some content
   </BusySpinner>
 );
 
 /* Story #2 - the component is not busy */
-export const notBusy: React.SFC<{}> = () => (
+export const notBusy = () => (
   <BusySpinner>
     <p>This is the real content</p>
   </BusySpinner>

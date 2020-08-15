@@ -6,11 +6,7 @@ interface Props {
   onClick?: (event: React.MouseEvent<HTMLSpanElement>) => void;
 }
 
-const BusySpinner: React.SFC<Props> = ({
-  children,
-  isBusy = false,
-  onClick,
-}: Props) => {
+const BusySpinner = ({ children, isBusy = false, onClick }: Props) => {
   if (isBusy) {
     return (
       <span data-id="spinner" onClick={onClick}>
