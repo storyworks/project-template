@@ -1,4 +1,4 @@
-# Projects template 
+# Projects template
 
 This template follows https://adrianhall.github.io/javascript/react/2020/03/29/parcel-typescript-react/
 
@@ -14,6 +14,7 @@ This template follows https://adrianhall.github.io/javascript/react/2020/03/29/p
 <br/>
 
 **Why build template from ground up and not just use `create-react-app`?**
+
 - We can’t alter the tsconfig.json except in some non-important ways.
 - It uses webpack underneath, and cannot change.
 - It uses jest and testing-library. Difficult to change.
@@ -30,26 +31,28 @@ Feel free to modify with your needs. Just change the "rules" in `eslintrc.js` or
 
 This project should be generic enough to setup on any web host. So far tested with:
 
+### Production branch
 
-### GitHub Pages
-To build all dist assests in gh-pages branch, keeping master with source code only:
+To build all dist assests in production branch, keeping master with source code only:
 
-1. 
+1.
+
 ```
-git checkout --orphan gh-pages
+git checkout --orphan production
 git rm -rf .
 git commit --allow-empty -m "Init empty branch"
-git push origin gh-pages
+git push origin production
 git checkout master
-git worktree add dist gh-pages
+git worktree add dist production
 ```
 
-2. On GitHub go into Settings -> GitHub Pages -> Select 'gh-pages' as the source.
+2. On GitHub go into Settings -> GitHub Pages -> Select 'production' as the source.
+   OR
+   Pick any other provider for deployment (Netlify, Azure, AWS)
 
 3. Run `yarn build` and `yarn deploy` to publish the app.
 
 <br/>
-
 
 ## Resources / Notes
 
